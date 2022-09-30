@@ -1,6 +1,6 @@
 services:
   webhooks_test_app:
-    image: uffizzitest/aaaa-webhooks-test-app:latest
+    image: ghcr.io/jessika.castellano/hello-world:latest
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
