@@ -1,8 +1,6 @@
 services:
-  webhooks_test:
+  webhooks_test_app:
     image: uffizzitest/hello-world-1:latest
-    environment:
-      POSTGRES_USER: postgres
 
 x-uffizzi-ingress:
   service: webhooks_test_app
