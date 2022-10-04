@@ -1,6 +1,6 @@
 services:
   webhooks_test_app:
-    image: uffizzitest/hello-world-1:latest
+    image: ghcr.io/jonashackt/hello:latest
 
 x-uffizzi-ingress:
   service: webhooks_test_app
