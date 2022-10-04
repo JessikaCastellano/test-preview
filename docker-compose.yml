@@ -4,11 +4,11 @@ services:
     environment:
       POSTGRES_USER: postgres
 
-x-ingress:
+x-uffizzi-ingress:
   service: webhooks_test_app
   port: 80
 
-x-continuous-preview:
+x-uffizzi-continuous-preview:
   delete_preview_after: 1h
   delete_preview_when_image_tag_is_updated: true
   deploy_preview_when_image_tag_is_created: true
