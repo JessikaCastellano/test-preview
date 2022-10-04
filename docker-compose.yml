@@ -1,12 +1,9 @@
 services:
-  webhooks_test_app:
-    image: ghcr.io/jonashackt/hello-world:latest
+  super:
+    image: nginx:latest
+    command: exit
 
-x-uffizzi-ingress:
-  service: webhooks_test_app
-  port: 80
-
-x-uffizzi-continuous-preview:
-  delete_preview_after: 1h
-  delete_preview_when_image_tag_is: true
-  deploy_preview_when_image_tag_is_created: true
+x-uffizzi:
+  ingress:
+    service: super
+    port: 80
