@@ -1,7 +1,7 @@
 services:
   super:
     image: nginx:latest
-    command: exit
+    command: /bin/undefined_comand
 
 x-uffizzi:
   ingress:
